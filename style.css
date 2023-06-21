@@ -1,5 +1,82 @@
 *{
     padding:0;
     margin:0;
-    background-color: aqua;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    background-image:linear-gradient(to right,#00ff87,#60efff) ;
+    
+}
+
+
+/* for styling the container */
+#container{
+    margin-top: 2rem;
+    background-color: #023047;
+    color:white;
+    width:50%;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* styling the search container  */
+
+#search-container{
+    margin:1rem;
+    height: 2rem;
+}
+
+
+/* styling the input */
+#taskInput{
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
+/* styling when the input is on focus */
+#taskInput:focus{
+    outline: none;
+}
+
+
+/*Add Button styles */
+#addBtn{
+    width: 20%;
+    height: 100%;
+    background-color:chocolate;
+    color: white;
+    border-radius: 5px;
+}
+
+/* styling the tasks which added */
+.spacing{
+    display:flex;
+    justify-content: space-between;
+    margin:0.5rem 4rem;
+}
+
+
+/* style added on completion of task */
+.lineThrough{
+    text-decoration: line-through;
+}
+
+/* For icon color */
+.icon-color{
+    color:red;
+}
+
+/* styling the tasks completion container */
+#tasks-completed{
+    display:flex;
+    justify-content: space-between;
+    margin:0.5rem 4rem;
 }
